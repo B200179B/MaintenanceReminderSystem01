@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "902273639186",
+    "firebase_url": "https://maintenance-reminder-system-default-rtdb.firebaseio.com",
+    "project_id": "maintenance-reminder-system",
+    "storage_bucket": "maintenance-reminder-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902273639186:android:d4aba0e36f36b4f160c9cb",
+        "android_client_info": {
+          "package_name": "com.example.maintenanceremindersystem01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902273639186-3itckmuqbk2chne8q889dddtg6mt693k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCllqRo-h_yiGfDpWXmW4UihvRqggEGmqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902273639186-3itckmuqbk2chne8q889dddtg6mt693k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
