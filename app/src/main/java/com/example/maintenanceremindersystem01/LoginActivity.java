@@ -96,8 +96,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if(task.isSuccessful()){
                     //redirect to user profile
                     startActivity(new Intent(LoginActivity.this, homePage.class));
+                    progressBar.setVisibility(View.GONE);
                 }else{
-                    Toast.makeText(LoginActivity.this, "Failed to login! Pls check your credentials !", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, "Failed to login! Pls make sure your email or password is correct !", Toast.LENGTH_LONG).show();
+                    progressBar.setVisibility(View.GONE);
                 }
             }
         });

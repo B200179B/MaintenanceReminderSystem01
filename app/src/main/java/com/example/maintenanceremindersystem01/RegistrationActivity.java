@@ -111,6 +111,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                                                 Toast.makeText(RegistrationActivity.this, "User has been registered successful !", Toast.LENGTH_LONG).show();
                                                 progressBar.setVisibility(View.GONE);
                                                 //redirect to login layout!
+                                                startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
                                             }else{
                                                 Toast.makeText(RegistrationActivity.this, "Failed to register! Try again!", Toast.LENGTH_LONG).show();
                                                 progressBar.setVisibility(View.GONE);
