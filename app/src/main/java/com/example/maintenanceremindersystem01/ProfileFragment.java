@@ -73,6 +73,7 @@ public class ProfileFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
 
+
         }
     }
 
@@ -82,6 +83,16 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_profile, container, false);
+
+        Button updateButton = (Button) view.findViewById(R.id.updateButton);
+        updateButton.setOnClickListener(new View.OnClickListener() {
+            @Override //
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), EditProfileActivity.class);
+                in.putExtra("some", "Enter the data to be update");
+                startActivity(in);
+            }
+        });
 
         profileName = view.findViewById(R.id.profileName);
         profileEmail = view.findViewById(R.id.profileEmail);
